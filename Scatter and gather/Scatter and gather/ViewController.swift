@@ -10,7 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
  
-  private var lambdaImage = UIImageView()
+    @IBOutlet weak var letterL: UILabel!
+    @IBOutlet weak var letterA: UILabel!
+    @IBOutlet weak var letterM: UILabel!
+    @IBOutlet weak var letterB: UILabel!
+    @IBOutlet weak var letterD: UILabel!
+    @IBOutlet weak var letterA2: UILabel!
+    
+    @IBOutlet weak var lambdaImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -66,6 +66,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="hHu-kk-Y66"/>
+                    <connections>
+                        <outlet property="lambdaImage" destination="k2p-bo-OUt" id="RWG-VW-3yT"/>
+                        <outlet property="letterA" destination="iXz-AP-Byr" id="Cmz-kj-gcv"/>
+                        <outlet property="letterA2" destination="iXz-AP-Byr" id="urj-hi-AyD"/>
+                        <outlet property="letterB" destination="b6q-Es-cN0" id="HPJ-rk-P5b"/>
+                        <outlet property="letterD" destination="yhI-wp-OtN" id="9QJ-I9-Bdr"/>
+                        <outlet property="letterL" destination="r0F-RQ-wSE" id="qpt-zD-7KI"/>
+                        <outlet property="letterM" destination="whS-AG-bJ9" id="pQh-UO-pvp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
