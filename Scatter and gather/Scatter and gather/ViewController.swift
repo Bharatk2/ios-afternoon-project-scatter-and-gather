@@ -54,6 +54,7 @@ class ViewController: UIViewController {
     
     
     func scatterLabels() {
+        
         arrayOfFunctions.shuffle()
         var round = 0
         
@@ -76,7 +77,24 @@ class ViewController: UIViewController {
     }
     
     func gatherLabels() {
+        var round = 0
         
+        for letter in allLabels {
+            
+            switch arrayOfFunctions[round] {
+            case 0:
+                rotateButtonTapped(uiLabel: letter)
+            case 1:
+                springButtonTapped(uiLabel: letter)
+            case 2:
+                keyButtonTapped(uiLabel: letter)
+            case 3:
+                squashButtonTapped(uiLabel: letter)
+            default:
+                anticipationButtonTapped(uiLabel: letter)
+            }
+            round += 1
+        }
         
     }
     
