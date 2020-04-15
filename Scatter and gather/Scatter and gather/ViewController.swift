@@ -18,12 +18,44 @@ class ViewController: UIViewController {
     @IBOutlet weak var letterA2: UILabel!
     
     @IBOutlet weak var lambdaImage: UIImageView!
+    @IBOutlet weak var toggleButtonLabel: UIBarButtonItem!
     
+    
+   private var isScattered = false
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
        
     }
+    
+    @IBAction func toggleTapped(_ sender: Any) {
+     isScattered.toggle()
+               
+               if isScattered {
+                   scatterLabels()
+                   toggleButtonLabel.title = "Gather"
+               } else {
+                   gatherLabels()
+                   toggleButtonLabel.title = "Scatter"
+               }
+    }
+    
+    
+    func scatterLabels() {
+        
+    }
+        
+        func gatherLabels() {
+            let allLabels: [UILabel] = [letterL,
+            letterA,
+            letterM,
+            letterB,
+            letterD,
+            letterA2]
+            
+          
+        }
+    
 
  
 
